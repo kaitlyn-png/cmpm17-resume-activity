@@ -1,4 +1,4 @@
-# Cmpm17ResumeActivity
+# CMPM 17 Resume Activity
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
