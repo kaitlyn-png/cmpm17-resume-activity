@@ -1,3 +1,56 @@
 // Style your resume as you wish but make sure to choose a background color other than white
 // Change the color of any section
 // Change the font size of any section
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#resume-container{
+    background-color: #5a0e3a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    flex-grow: 1;
+    
+    color: rgb(255, 255, 255);        
+    font-family: Arial, sans-serif;
+    
+    #name{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    #picture{
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+        }
+    }
+
+    .two-column-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        #experience, #skills{
+            text-align: left;
+            font-size: 18px;
+            margin-top: 20px;
+
+            h2{
+                font-size: 24px;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            ul{
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+        }
+    }
+}
