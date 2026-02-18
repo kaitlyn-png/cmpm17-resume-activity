@@ -63,4 +63,13 @@ body{
     ul{
         text-align: left;
     }
+    mat-expansion-panel-header{
+        background-color: #7a2e5a;
+        color: white;
+    }
+    mat-expansion-panel{
+        background-color: #9a4e7a;
+        color: white;
+        margin-bottom: 10px;
+    }
 }

@@ -1,11 +1,3 @@
-<!-- Go ahead and add your name -->
-<!-- Add a picture of yourself -->
-
-<!-- Include leadership positions, skills, or any other sections you
- would like to add to your online resume-->
-<!-- use list element if you are adding multiple things under each section
- such as Leadership, Skills -->
-
 <div id = "resume-container">
     <p id = "name"> Kaitlyn Eng </p>
     <div id = "picture"> <img src="images/kaitlyn-image.jpg" alt="Kaitlyn Eng Picture"> </div>
@@ -25,12 +17,23 @@
     </div>
     <div class = "two-column-wrapper">
         <div id = "experience">
-            <h2> Previous Experience </h2>
+            <h2> Previous Computer Science Experience </h2>
             <ul>
                 <li> Collegiate Club Program Ambassador (Slug Gaming at UC Santa Cruz) </li>
                 <li> Slug Gaming Manager </li>
                 <li> Elements of Web Design Intern </li>
             </ul>
+            <!-- edit later -->
+            <!-- <div id = "prev-work-container">
+                <h1> Previous Work Experience </h1>
+                <h2 (click) = "changeStudent()"> {{ myExperience()?.name }} </h2>
+                <h3> {{ myExperience()?.positionTitle }}, {{ myExperience()?.organization }} </h3>
+                @for (experience of myExperience()?.descriptions; track $index){
+                    <ul>
+                        <li> {{ experience }} </li>
+                    </ul>
+                }
+            </div> -->
         </div>
         <div id = "skills">
             <h2> Skills </h2>
@@ -43,10 +46,30 @@
         </div>
     </div>
     <div id = "courses">
+        <h2> Relevant Coursework </h2>
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header>
-                <mat-panel-title> Courses </mat-panel-title>
-                <mat-panel-description> 2025 </mat-panel-description>
+                <mat-panel-title> 2026 </mat-panel-title>
+                <mat-panel-description> Senior </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p class = "season">Winter</p>
+            <ul>
+                <li><b>CMPM 17:</b> Web Development Components with Tech4Good </li>
+                <li><b>CMPM 146:</b> Game AI </li>
+                <li><b>CSE 160:</b> Intro to Computer Graphics</li>
+            </ul>
+            <!-- TO BE FILLED OUT -->
+            <!-- <p class = "season">Spring</p>
+            <ul>
+                <li><b>CSE101M: </b> </li>
+                <li><b></b></li>
+                <li><b></b></li>
+            </ul> -->
+        </mat-expansion-panel>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title> 2025 </mat-panel-title>
+                <mat-panel-description> Junior/Senior </mat-panel-description>
             </mat-expansion-panel-header>
             <p class = "season">Winter</p>
             <ul>
@@ -66,6 +89,72 @@
                 <li><b>CMPM 118:</b> Rsrch Exp in ENG</li>
                 <li><b>CMPM121:</b> Game Dev Patterns</li>
                 <li><b>CMPM176:</b> Game Systems</li>
+            </ul>
+        </mat-expansion-panel>
+         <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title> 2024 </mat-panel-title>
+                <mat-panel-description> Sophomore/Junior </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p class = "season">Winter</p>
+            <ul>
+                <li><b>CSE101:</b> Data Structs & Algs</li>
+                <li><b>CSE120:</b> Computer Architect</li>
+                <li><b>MUSC 80P:</b> US Popular Music</li>
+            </ul>
+            <p class = "season">Spring</p>
+            <ul>
+                <li><b>CSE 130:</b> Prin Comp Sys Dsgn</li>
+                <li><b>LIT 81I:</b> Engineering California</li>
+                <li><b>MATH 23A:</b> Vector Calculus</li>
+            </ul>
+
+            <p class = "season">Summer</p>
+            <ul>
+                <li><b>ART 135:</b> Digital Painting</li>
+            </ul>
+            
+            <p class = "season">Fall</p>
+            <ul>
+                <li><b>CSE 107:</b> Research Explorations</li>
+                <li><b>CSE 113:</b> Parallel Programming </li>
+                <li><b>CSE 114A: </b> Foundations of Program Language</li>
+            </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title> 2023 </mat-panel-title>
+                <mat-panel-description> Freshman/Sophomore </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p class = "season">Winter</p>
+            <ul>
+                <li><b>CSE 12:</b> Com Sys/Assmbly Lan</li>
+                <li><b>CSE 30:</b> Prog Abs Python</li>
+                <li><b>MATH 19B:</b> Calc:Sci,Engin,Math</li>
+            </ul>
+            <p class = "season">Spring</p>
+            <ul>
+                <li><b>CSE 13S:</b> Comp Sys and C Prog</li>
+                <li><b>CSE 16</b> Appl Discrete Math</li>
+                <li><b>WRIT 1</b> Intro to Comp</li>
+            </ul>
+            <p class = "season">Fall</p>
+            <ul>
+                <li><b>AM 10:</b> Math Methods I</li>
+                <li><b>CMPM 80K:</b> Foundations Game Design</li>
+                <li><b>Writing 2:</b> Rhetoric & Inquiry</li>
+            </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title> 2022 </mat-panel-title>
+                <mat-panel-description> Freshman </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p class = "season">Fall</p>
+            <ul>
+                <li><b>CRWN 1: </b>ALE:Emerging Tech</li>
+                <li><b>HAVC 70: </b>Pacific Islands Art</li>
+                <li><b>MATH 19A: </b>Calc:Sci,Engin,Math</li>
             </ul>
         </mat-expansion-panel>
     </div>
