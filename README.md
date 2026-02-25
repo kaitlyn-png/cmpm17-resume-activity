@@ -57,3 +57,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Deploying to GitHub Pages
+
+This project includes a workflow at `.github/workflows/deploy-pages.yml` that deploys the app to GitHub Pages automatically when you push to the `main` branch.
+
+One-time GitHub setup:
+
+1. Push this repository to GitHub.
+2. In GitHub, open **Settings** → **Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+
+After that, every push to `main` will build and deploy the latest version. The workflow also creates a `404.html` fallback so Angular routes work on refresh.
